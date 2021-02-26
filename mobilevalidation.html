@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkno() 
+        {
+            // let num=/^[9][8][7]\d{7}$/
+            // let num=/^(987)\d{7}$/
+            // let num=/^(987|789)\d{7}$/
+            // let num=/\d*/
+            let num=/^\+91\s(987|789)\d{7}$/g
+            let data=document.getElementById('data').value//input
+        
+             alert(data.match(num))
+             if(mail.test(data))
+            {
+                alert("valid mobile number")
+            }
+            else{
+                alert("Invalid mobile number")
+
+            }
+
+        }
+    </script>
+  <input type="text" id="data">
+  <button onclick="checkno()">Click</button>    
+</body>
+</html>

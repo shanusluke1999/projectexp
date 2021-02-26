@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // instruction for alert 
+
+        alert("hello")//window.alert=alert()
+        console.log("This is a log message")
+        document.write("Hello") 
+        //variable declaration
+        let a
+        a=100//initialization of var a
+        console.log(a)
+        //to check datatype
+        console.log(typeof a)
+        let f=70.89
+        let i="hello"
+        let s='Welcome'
+        let b=true//should be small letters
+        let k;
+        let obj=null
+        console.log("f=",f)
+        console.log("datatype of f:",typeof f)
+        console.log("Datatype of i:",typeof i)
+        console.log("Datatype of s:",typeof s)
+        console.log("Datatype of b:",typeof b)
+        console.log("Datatype of k:",typeof k)
+        console.log("Datatype of obj:",typeof obj)
+        //to print both msg and data
+        console.log(`data type of k ${typeof k}`)
+        // operators
+        //...arithmetic operators
+        let a1=10;let a2=100;let a3=90
+        let sum=a1+a2//addition
+        let sub=a2-a1//subtraction
+        let mul=a1*a2//multiplication
+        let div=a2/a1//division
+        let rem=a2%a3//remainder
+        let pow=a1**3//power of
+        a1+=2//a1=a1+2
+        console.log("datatype of sum:",typeof sum)
+
+        console.log("Sum=",sum)
+        console.log("sub=",sub)
+        console.log("mul=",mul)
+        console.log("div=",div)
+        console.log("rem=",rem)
+        console.log("pow=",pow)
+        console.log("a1+=2 is",a1)
+
+        document.write("<br>","Sum=",sum,"<br>") 
+        document.write("sub=",sub,"<br>") 
+        document.write("mul=",mul,"<br>") 
+        document.write("div=",div,"<br>") 
+        document.write("rem=",rem,"<br>") 
+        document.write("pow=",pow,"<br>") 
+        document.write("a1+2=",a1) 
+        // relational operators
+        //a1==a2 is comparing only value answers=true/false
+        //a1===a2 compare both value and datatype
+        let s1="123"; let s2=123; let s3=60
+        console.log(s1==s2)
+        console.log(s1===s2)
+        console.log(s2<s3)                //these are ealso called expressions
+        console.log(s2>s3)
+        console.log(s2<=s3)
+        console.log(s2>=s3)
+        console.log(s2!=s3)
+
+//Logical operators OR and AND
+console.log(s1==s2 && s2>s3)
+console.log(s1===s2 && s2>s3)
+console.log(s1===s2 || s2>s3)
+console.log(!(s1===s2))
+
+
+    </script>
+</body>
+</html>

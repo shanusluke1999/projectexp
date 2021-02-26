@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check() {
+            // let regex=/\d{5}/g //regular expression
+            let regexx=/^[a-z]{3}\d{2}$/
+let data=document.getElementById('data').value//input
+// alert(data.match(regex))
+alert(data.match(regexx))
+
+        }
+    </script>
+    <input type="text" id="data">
+    <button onclick="check()">Click</button>
+</body>
+</html>

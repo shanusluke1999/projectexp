@@ -1,0 +1,15 @@
+.tbl{
+    border-collapse: collapse;
+}
+.headlink{
+    background-color: grey;
+}
+.headlink:hover{
+    background-color: blue;
+}
+.rowlink:nth-child(even){
+    background-color: green;
+}
+.rowlink:hover:nth-child(odd){
+    background-color: red;
+}

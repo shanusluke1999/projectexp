@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names=["Anna","Rose","Rachel","Kevin","Ram","Dona"]
+    console.table(names.slice(2,5))
+    console.table(names)
+    for(element of names)
+    {
+        console.log(element)
+    }
+    console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    for(index in names)
+    {
+        console.log(index)
+        console.log(names[index])
+    }
+    console.log("%%%%%%%%%%%%%%%%%% USING FOR EACH %%%%%%%%%%%%%%%%%%%%")
+
+    names.forEach((names) => {//lamda function
+        console.log(names)
+    });
+    console.log("%%%%%%%%%%%%%%%%%% using map function %%%%%%%%%%%%%%%%%%%%")
+
+    newary=names.map((name)=>{ //using map function
+        return name.concat("*")
+    })
+    console.log(newary)
+    console.log("%%%%%%%%%%%%%%%%%% using filter function %%%%%%%%%%%%%%%%%%%%")
+let newarr2=names.filter((name)=>{
+    if(name.startsWith("R"))
+{
+    return name
+}
+})
+console.log(newarr2)
+console.log("%%%%%%%%%%%%%%%%%% find square using map function %%%%%%%%%%%%%%%%%%%%")
+
+let num_ary=[9,11,10,4,7,8]
+let newary3=num_ary.map((x)=>{
+    return x**2
+})
+console.log(newary3)
+console.log("%%%%%%%%%%%%%%%%%% using reduce function %%%%%%%%%%%%%%%%%%%%")
+let result=num_ary.reduce((x,y)=>
+{
+    console.log("x",x)
+    console.log("y",y)
+return x+y
+})
+console.log(result);
+
+console.log("%%%%%%%%%%%%%%%%%% using reduceRight function %%%%%%%%%%%%%%%%%%%%")
+console.log(num_ary);
+
+let result1=num_ary.reduceRight((x,y)=>
+{
+    console.log("x",x)
+    console.log("y",y)
+return x+y
+}) 
+console.log(result1);
+// console.log("%%%%%%%%%%%%%%%%%% using sort function %%%%%%%%%%%%%%%%%%%%")
+// num_ary.sort()
+// console.log(num_ary);
+console.log("%%%%%%%%%%%%%%%%%% using reverse function %%%%%%%%%%%%%%%%%%%%")
+console.log("array",num_ary);
+num_ary.reverse()
+console.log(num_ary);
+    </script>
+</body>
+</html>

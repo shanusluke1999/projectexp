@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkmt() 
+        {
+let mtdata=/^[9876543210]\(0484)-2245561\d $/g
+var input="my phone number is 9876543210 and office number"+
+"is (0484)-2245561"+"and fax no is 0484-2245602"
+
+alert(input.match(mtdata))
+ 
+}
+let inp='python programming python scripting'
+let regex=/python/g
+let result=inp.replace(regex,"javascript")
+alert(result)
+
+    </script>
+    <p>my phone number is 9876543210 and office number is (0484)-2245561 and fax no is 0484-2245602
+    </p>
+<button onclick="checkmt()">Check</button>    
+</body>
+</html>

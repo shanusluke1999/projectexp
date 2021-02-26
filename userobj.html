@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={}
+        console.log(obj);
+        console.log(typeof obj);
+        obj.x=10//to add properties
+        obj.y=30
+        //to add functions
+        obj.show=function(){
+            console.log(`x=${this.x}`);
+        console.log(`y=${this.y}`);
+        }
+        obj.show()
+        let person={name:"arun",age:12,display:function(){
+            console.log(`name ${this.name}`);
+            console.log(`age ${this.age}`);
+        }}
+        console.log(person);
+        person.display()
+        let sum=0
+        let std={name:"annuz",rollno:29,marks:[20,30,45],average:function()
+    {
+        this.marks.forEach(element=>{
+            sum+=element
+        })
+        return sum/this.marks.length
+
+    }}
+       console.log(std.average());
+        
+
+</script>
+</body>
+</html>
