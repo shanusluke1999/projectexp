@@ -12,22 +12,25 @@
             this.Name=name
             this.Age=age
             this.Rollno=rollno
-            this.Marks=new Marks()
-            this.Marks=marks
+            this.marks=marks
             this.show=function(){
-            console.log(`student Name=${this.Name}`);//using this keyword -refers to currently revoked obj
+            console.log(`student Name=${this.Name}`);
             console.log(`student Age=${this.Age}`);
             console.log(`student Rollno=${this.Rollno}`);
-            console.log(`student Marks=${this.Marks}`);
+            console.log(`student Marks=${this.marks}`);
+                        }
+            this.average=function(marks){
+                let sum=0
+                this.marks.forEach(element=>{
 
-            }
-            this.average=function(Marks){
-
-
-            }
+                sum+=this.marks
+                });
+                return this.marks/this.marks.length            }
+            let std1=new student("Raju",15,"s101",[30,20,40])
+            std1.average()
+            std1.show()
 
         }
-
     </script>
     
 </body>
