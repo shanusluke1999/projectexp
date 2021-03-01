@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function employee(eid,name,salary)
+        {
+            this.Eid=eid
+            this.Name=name
+            this.Salary=salary
+            this.show=function(){
+            console.log(`employee id=${this.Eid}`);//using this keyword -refers to currently revoked obj
+            console.log(`employee name=${this.Name}`);
+            console.log(`employee salary=${this.Salary}`);
+            }
+            this.increment=function(){
+                console.log("**********Incremented Salary************");
+            this.Salary+=1000
+            console.log(`employee id=${this.Eid}`);
+            console.log(`employee name=${this.Name}`);
+            console.log(`employee salary=${this.Salary}`);
+            }
+        }
+        let emp1=new employee("E101","Raju",10000)
+        let emp2=new employee("E102","Raj",15000)
+        let emp3=new employee("E103","Reenu",20000)
+console.log(emp1);
+emp1.show()
+emp2.show()
+console.log(emp1);
+emp1.increment()
+emp2.increment()
+    </script>
+    
+</body>
+</html>

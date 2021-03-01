@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function student(name,age,rollno,marks){
+            this.Name=name
+            this.Age=age
+            this.Rollno=rollno
+            this.Marks=new Marks()
+            this.Marks=marks
+            this.show=function(){
+            console.log(`student Name=${this.Name}`);//using this keyword -refers to currently revoked obj
+            console.log(`student Age=${this.Age}`);
+            console.log(`student Rollno=${this.Rollno}`);
+            console.log(`student Marks=${this.Marks}`);
+
+            }
+            this.average=function(Marks){
+
+
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
